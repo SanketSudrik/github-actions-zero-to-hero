@@ -12,4 +12,9 @@ jobs:
 
             - name: what is your name 
               run: echo "Hello $USER"
-  
+    details:
+         runs-on: ubuntu-latest
+         steps:
+             - name: check version
+               run: version --docker && version --python 
+             
